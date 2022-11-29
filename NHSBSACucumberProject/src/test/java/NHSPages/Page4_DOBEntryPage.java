@@ -23,16 +23,16 @@ public class Page4_DOBEntryPage extends TestBase{
 	@FindBy(xpath="//input[@id='next-button']")
 	static WebElement clickNext;
 	
-	public static void enterDay() {
-		enterDay.sendKeys("06");
+	public static void enterDay(String Day) {
+		enterDay.sendKeys(Day);
 		
 	}
-	public static void enterMonth() {
-		enterMonth.sendKeys("12");
+	public static void enterMonth(String Month) {
+		enterMonth.sendKeys(Month);
 		
 	}
-	public static void enterYear() {
-		enterYear.sendKeys("1987");;
+	public static void enterYear(String Year) {
+		enterYear.sendKeys(Year);;
 		
 	}
 	public static void clickNext() {

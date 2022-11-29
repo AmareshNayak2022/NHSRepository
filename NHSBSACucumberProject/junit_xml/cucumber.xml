@@ -1,38 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="122.515">
-    <testcase classname="NHSBSA health treatment check for various combinations for country England" name="NHSBSA treatment help check country England(Combination1)" time="76.895">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="70.253">
+    <testcase classname="NHSBSA health treatment check for various combinations for country England" name="NHSBSA treatment help check country England(Combination1)" time="70.052">
         <system-out><![CDATA[Given User launches browser and enters urlengland...........................passed
 When user clicks on StartNow buttonengland..................................passed
 And user selects country England clicks Next................................passed
 And user selects GPPractice yes clicks Next.................................passed
 And user selects dental practice country England clicks Next................passed
-And user enter Date of Birth clicks Next....................................passed
+And user enter valid "06" and "12" and  "1987" in Date of Birth clicks Next.passed
 And user enters livein partner Yes and clicks Next..........................passed
 And user selects benefits Yes and Clicks Next...............................passed
 And user selects universal credit Yes and clicks Next.......................passed
 And user selects response and clicks Next...................................passed
 And user selects less than 935 pond and clicks Next.........................passed
 Then user lands on NHSBSA help Page.........................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="NHSBSA health treatment check for various combinations for country NorthernIreland" name="NHSBSA treatment help check country NorthernIreland" time="45.363">
-        <system-out><![CDATA[Given User launches browser and enters urlnorthernireland...................passed
-When user clicks on StartNow buttonnorthernireland..........................passed
-And user selects country NorthernIrelandnorthernireland.....................passed
-And user clicks Next button.................................................passed
-Then user checks the treatment helpnorthernireland..........................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="NHSBSA health treatment check for various combinations for country Scotland" name="NHSBSA treatment help check country Scotland" time="0">
-        <system-out><![CDATA[Given User launches browser and enters urlscotland..........................passed
-When user clicks on StartNow buttonscotland.................................passed
-Then user lands on country selection pagescotland...........................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="NHSBSA health treatment check for various combinations for country Wales" name="NHSBSA treatment help check country Wales" time="0.007">
-        <system-out><![CDATA[Given User launches browser and enters urlwales.............................passed
-When user clicks on StartNow buttonwales....................................passed
-Then user lands on country selection pagewales..............................passed
 ]]></system-out>
     </testcase>
 </testsuite>

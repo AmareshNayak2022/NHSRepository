@@ -16,6 +16,7 @@ import NHSPages.Page7_UniversalCreditPage;
 import NHSPages.Page8_ResponsePage;
 import NHSPages.StartPage;
 import NHSUtils.TestBase;
+import NHSUtils.Utils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -26,6 +27,7 @@ public class CountryEnglandSteps extends TestBase{
 
 	TestBase tb;
 	StartPage sp;
+	Utils ul;
 	Page1_CountrySelectionPage cs;
 	Page2_GPPracticeLocationYesNoPage gps;
 	Page3_DentalPracticeCountryPage dcs;
@@ -40,6 +42,7 @@ public class CountryEnglandSteps extends TestBase{
 	@Given("User launches browser and enters urlengland")
 	public void user_launches_browser_and_enters_urlengland() throws InterruptedException {
 		tb.initializationfirefox();;
+		System.out.println("checking");
         Thread.sleep(5000);
        
 	   
@@ -79,7 +82,7 @@ public class CountryEnglandSteps extends TestBase{
 	    Thread.sleep(5000);
 	    
 	}
-	@And("user enter Date of Birth clicks Next")
+	/*@And("user enter Date of Birth clicks Next")
 	public void user_enters_DOB() throws InterruptedException {
 	    dob = new Page4_DOBEntryPage(driver);
 	    dob.enterDay();
@@ -88,6 +91,16 @@ public class CountryEnglandSteps extends TestBase{
 	    dob.clickNext();
 	    Thread.sleep(5000);
 	    
+	}*/
+	@When("user enter valid {string} and {string} and  {string} in Date of Birth clicks Next")
+	public void user_enter_valid_and_and_in_date_of_birth_clicks_next(String Day, String Month	, String Year) throws InterruptedException {
+	   
+	    dob = new Page4_DOBEntryPage(driver);
+	    dob.enterDay(Day);
+	    dob.enterMonth(Month);
+	    dob.enterYear(Year);
+	    dob.clickNext();
+	    Thread.sleep(5000);
 	}
 	@And("user enters livein partner Yes and clicks Next")
 	public void user_selects_liveinpartner_yes() throws InterruptedException {
@@ -135,9 +148,8 @@ public class CountryEnglandSteps extends TestBase{
 	@Then("user lands on NHSBSA help Page")
 	public void user_lands_on_NHSBSA_help_Page() throws InterruptedException {
 	    fhp = new Page21_FinalHelpPage(driver);
-	    //fhp.resultReasonshow();
-	    System.out.println("I am on last page");
-	    Thread.sleep(5000);
+	    ul = new Utils();
+	    ul.ListComparison();
 	    
 	    
 	}

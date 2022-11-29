@@ -7,9 +7,11 @@ import io.cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src\\test\\resources\\NHSFeatureTests"
-,glue= {"StepDefinitions"}
-,monochrome = true,
-plugin = {"pretty","html:test-output","json:json-output/cucumber.json", "junit:junit_xml/cucumber.xml"}
+,glue= {"StepDefinitions"},
+tags = "@EnglandNHSBSACheck",
+monochrome = true,
+plugin = {"pretty","html:target/cucumber-html-report","json:json-output/cucumber.json", "junit:junit_xml/cucumber.xml"}
+
 		
 
 
