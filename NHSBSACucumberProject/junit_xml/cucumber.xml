@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="70.253">
-    <testcase classname="NHSBSA health treatment check for various combinations for country England" name="NHSBSA treatment help check country England(Combination1)" time="70.052">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="78.004">
+    <testcase classname="NHSBSA health treatment check for various combinations for country England" name="NHSBSA treatment help check country England(Combination1)" time="77.235">
         <system-out><![CDATA[Given User launches browser and enters urlengland...........................passed
 When user clicks on StartNow buttonengland..................................passed
 And user selects country England clicks Next................................passed
